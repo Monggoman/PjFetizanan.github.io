@@ -1,0 +1,238 @@
+.main ul
+{
+	position: absolute;
+	top: 20%;
+	left: 23%;
+	transform: translate(-50%,-50%);
+	margin: 0%;
+	padding: 0%;
+	width: 600px;
+	height: 150px;
+}
+.main ul li
+{
+	list-style: none;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	transform: rotate(45deg);
+	transition: .5s;
+	margin: 10px;
+	overflow: hidden;
+	opacity: .5;
+	
+}
+.main ul li:hover
+{
+	opacity: 1;
+}
+.main ul li.item1
+{
+	top: 36%;
+	left: 0;
+	
+}
+.main ul li.item2
+{
+	top: 85%;
+	left: 0;
+}
+.main ul li.item3
+{
+	top: 136%;
+	left: 0;
+}
+.main ul li.item4
+{
+	top: 185%;
+	left: 0;
+}
+.main ul li.item5
+{
+	top: 234%;
+	left: 0;
+}
+
+.main ul li.item6
+{
+	top: 282%;
+	left: 0;
+}
+.main ul li .bg
+{
+	width: 100%;
+	height: 100%;
+	transform: rotate(-45deg) scale(1.5);
+}
+.main ul li.item1 .bg
+{
+	background: url(../images/infant.jpg);
+	background-size: cover;
+	transform: rotate(90deg) scale(1.4);
+}
+.main ul li.item2 .bg
+{
+	background: url(../images/toddler.jpg);
+	background-size: cover;
+	transform: rotate(45deg) scale(1.4);
+}
+.main ul li.item3 .bg
+{
+	background: url(../images/childhood.jpg);
+	background-size: cover;
+	transform: rotate(45deg) scale(1.4);
+}
+.main ul li.item4 .bg
+{
+	background: url(../images/teenage.jpg);
+	background-size: cover;
+	transform: rotate(-46deg) scale(1.5);
+}
+.main ul li.item5 .bg
+{
+	background: url(../images/fetizanan.jpg);
+	background-size: cover;
+}
+.main ul li.item6 .bg
+{
+	background: url(../images/VEXEL.png);
+	background-size: cover;
+	width: 115%;
+    transform: rotate(-48deg)scale(2);
+}
+
+.card
+{
+	font-family: sans-serif;
+	position: absolute;
+	top: 60%;
+	left: 52%;
+	transform: translate(-50%,-50%);
+	width: 650px;
+	height: 450px;
+	background: rgba(255,255,255,.2);
+	overflow: hidden;
+}
+.card .imgBG,
+.card .details
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	box-sizing: border-box;
+	transition: .5s;
+	
+}
+.card .imgBG
+{
+	top: 0;
+	left: 0;
+	
+}
+.card:hover .imgBG
+{
+	top: 0;
+	left: -100%;
+}
+.card .imgBG img
+{
+	transform: rotate(180deg);
+	width: 100%;
+}
+.card .details
+{
+	background: rgba(255,255,255,.4);
+	top: 0;
+	left: 100%;
+	padding: 40px 30px;
+	
+}
+.card:hover .details
+{
+	top: 0;
+	left: 0;
+}
+.card .details p
+{
+	font-size: 26px;
+	font-family: george;
+	margin: 20px 0 0;
+	color: rgba(97,97,97,1);
+}
+.Title h1
+{
+	position: absolute;
+	font-family: Impact;
+	font-size: 110px;
+	text-align: center;
+	color: #fff;
+	top: -10%;
+	left: 20%;
+}
+.Title h2
+{
+	position: absolute;
+	top: 15%;
+	left: 65%;
+	font-family: george;
+	font-size: 30px;
+	color: #fff;
+}
+.Title hr
+{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+.box
+{
+	position: absolute;
+	top: 12%;
+	left: 90%;
+	transform: translate(-50%,-50%);
+	width: 50px;
+	height: 50px;
+}
+.box .front img
+{
+	position: absolute;
+	top: -74%;
+    left: -46%;
+	width: 340%;
+}
+.box .back img
+{
+	width: 250%;
+}
+.box .front,
+.box .back
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 2s;
+	backface-visibility: hidden;	
+}
+.box .front
+{
+	transform: perspective(1000px) rotateY(0deg);
+	z-index: 2;
+}
+.box .back
+{
+	transform: perspective(1000px) rotateY(180deg);
+	z-index: 1;
+}
+.box:hover .front
+{
+	transform: perspective(1000px) rotateY(-180deg);
+	z-index: 2;
+}
+.box:hover .back
+{
+	transform: perspective(1000px) rotateY(0deg);
+	z-index: 1;
+}
